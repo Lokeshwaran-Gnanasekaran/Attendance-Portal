@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="783110061714-fh3bus59o2s7g4eb4j2ndfhc0e088aea.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <title>Attendance portal</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        
+        #header{
+            text-align: center;
+           
+            z-index:1;
+            position: relative;
+            padding-top: 40vh;
+        }
+        #header h1{
+            font-size:100px;
+            color:black;
+            font-family: 'Jacques Francois Shadow', cursive;
+        }
+        #text1{
+            font-family: 'Bree Serif', serif;
+            font-size: 40px;
+            color: black;
+        }
+        
+        .slideshow{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top:0%;
+            left:0;
+            z-index: 0;
+            list-style: none;
+            margin: 0%;
+            padding:0 ;
+        }
+        .slideshow li{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index:0;
+            animation:imageAnimation 50s linear infinite;
+        }
+        .slideshow li:nth-child(1){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZTnq3qEXO5KPBDKzMwqUSgUHEFAOMiTYJdXmX0b9vkJW9rwfc);
+        }
+        .slideshow li:nth-child(2){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKl5hGaHUnGxnPO7GsVjsIpAnxC2xmVLTcil06WDUktEwyas5k);
+            animation-delay: 10s;
+        }
+        .slideshow li:nth-child(3){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAENxUWjpbXpecS2IQCwNOVuE4TUB5vR8zvvom4_GgyeHmUOI9);
+            animation-delay: 20s;
+        }
+        .slideshow li:nth-child(4){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHac5s4PKbOthgc7wnhw4jrHN2v7w43lQk4fwii6Mdu02f0vbo);
+            animation-delay: 30s;
+        }
+        .slideshow li:nth-child(5){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl5d1TdBXlksIfBb5mjm6s-zf_3qcXsmLW6z4nF6j5pkQa0dU1);
+            animation-delay: 40s;
+        }
+        @keyframes imageAnimation  {
+            0%{
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            10%{
+                opacity: 1;
+                animation-timing-function:ease-out;
+            }
+            20%{
+                opacity: 1;
+                
+            }
+            30%{
+                opacity: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+ <div id="header">
+        <h1><i class="fa fa-id-card-o" aria-hidden="true"></i>Attendance Portal</h1>
+
+        <a href="/auth/google" class="google btn btn btn-large btn-danger"><i class="fa fa-google fa-fw">
+            </i> Login with Google+
+          </a>
+        <p id="text1">Attend Today Achieve Tomorrow</p>  
+
+ </div>   
+
+<ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+ 
+
+    
+</body>
+</html>
